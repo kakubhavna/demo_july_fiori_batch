@@ -1,5 +1,5 @@
 <mvc:View xmlns:control="sap.gantt.control" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ey.fin.ap.controller.View1">
-    <Page title = "All products " >
+    <Page title = "Prod2 " >
         <headerContent>
             
         <Button tooltip="Go to the Next screen " icon ="sap-icon://arrow-right" press="onNext"> </Button>
@@ -8,7 +8,7 @@
            <!-- <Button text="Go to" icon ="sap-icon://arrow-right" press="onNext"> </Button>-->
            <SearchField id="idSearch" search="onSearch"></SearchField>
      <!--     <List id="idList" items="{/fruits}" mode="SingleSelectMaster">--> 
-        <!--      <List id="idList" items="{/fruits}" mode="MultiSelect" >-->
+        <!--      <List idgit ="idList" items="{/fruits}" mode="MultiSelect" >-->
                <!--<List id="idFruits" items="{path : '/fruits' , sorter: {path:'name'}}" mode="Delete" delete="onDelete">-->
       <List id="idFruits" items="{path : '/ProductSet'}" selectionChange="onItemSelect" growing="true" growingThreshold="10"
        mode="SingleSelectMaster" delete="onDelete">
