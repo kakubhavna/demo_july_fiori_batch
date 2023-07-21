@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@sap/ux-ui5-tooling": "^1.10.2"
+  },
+  "name": "myfioriproject_08",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

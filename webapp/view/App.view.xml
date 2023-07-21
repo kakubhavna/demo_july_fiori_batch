@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<!--This below App is controller control not view name, has aggregation as pages, method add page to application -->
+    <SplitApp id="appCon">
+            
+    </SplitApp>   
+</mvc:View>

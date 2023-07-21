@@ -1,0 +1,41 @@
+<mvc:View xmlns:control="sap.gantt.control" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ey.fin.ap.controller.View1">
+    <Page title = "tool bar table control and filter icon " >
+        <headerContent>
+            
+        <Button tooltip="Go to the Next screen " icon ="sap-icon://arrow-right" press="onNext"> </Button>
+        </headerContent>
+       <content>
+           <!-- <Button text="Go to" icon ="sap-icon://arrow-right" press="onNext"> </Button>-->
+           <SearchField id="idSearch" search="onSearch"></SearchField>
+     <!--     <List id="idList" items="{/fruits}" mode="SingleSelectMaster">--> 
+        <!--      <List id="idList" items="{/fruits}" mode="MultiSelect" >-->
+               <!--<List id="idFruits" items="{path : '/fruits' , sorter: {path:'name'}}" mode="Delete" delete="onDelete">-->
+      <List id="idFruits" items="{path : '/ProductSet'}" selectionChange="onItemSelect" growing="true" growingThreshold="10"
+       mode="SingleSelectMaster" delete="onDelete">
+       <!-- <List id="idFruits" items="{path : '/fruits' , sorter: {path:'name'}}" selectionChange="onItemSelect" mode="MultiSelect" delete="onDelete">-->
+        <headerToolbar>
+            <Toolbar>
+                 <Button icon="sap-icon://delete" tooltip="Delete selected Items" press="onDeleteMultiple"> </Button>
+            </Toolbar>
+        </headerToolbar>
+        <items>
+                     <!-- Important object list item is used to display business object data-->
+                      <ObjectListItem  title= "{NAME}" intro="{PRODUCT_ID}"   number="{PRICE}" numberUnit="{CURRENCY_CODE}" icon="sap-icon://product">
+                        <attributes>
+                            <ObjectAttribute title ="Category" text="{CATEGORY}"></ObjectAttribute>
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus text="{SUPPLIER_NAME}">  </ObjectStatus>
+                        </firstStatus>
+                      </ObjectListItem>
+                </items>
+           </List>
+       </content>
+        <footer>
+            <Toolbar >
+                <ToolbarSpacer ></ToolbarSpacer>
+                <Button icon="sap-icon://add" tooltip="Add new product" press="onAdd" ></Button>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
