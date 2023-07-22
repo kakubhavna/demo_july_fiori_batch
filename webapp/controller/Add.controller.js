@@ -1,12 +1,12 @@
 sap.ui.define([
-    'com/ey/fin/ap/controller/BaseController',
+    'com/ey/finn/ap/controller/BaseController',
     'sap/ui/model/json/JSONModel',
     'sap/m/MessageBox',
     'sap/m/MessageToast',
     'sap/ui/core/Fragment',
 ], function(BaseController,JSONModel,MessageBox,MessageToast,Fragment){
     'use strict';
-    return BaseController.extend("com.ey.fin.ap.controller.Add",{
+    return BaseController.extend("com.ey.finn.ap.controller.Add",{
         onInit: function (){
             //create a local json model which will hold the payload 
             //of the data which we need to sent to backend sap system
@@ -92,7 +92,7 @@ sap.ui.define([
             if(!this.oSupplierPopup){
               Fragment.load ({
                   id:'supplier',
-                  name:'com.ey.fin.ap.fragments.popup',
+                  name:'com.ey.finn.ap.fragments.popup',
                   controller: this
                 }).then(function(oDialogBox){
                       that.oSupplierPopup=oDialogBox;

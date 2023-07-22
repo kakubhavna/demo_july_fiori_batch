@@ -1,5 +1,5 @@
 sap.ui.define([
-    'com/ey/fin/ap/controller/BaseController',
+    'com/ey/finn/ap/controller/BaseController',
     'sap/m/MessageBox',
     'sap/m/MessageToast',
     'sap/ui/core/Fragment',
@@ -7,7 +7,7 @@ sap.ui.define([
     'sap/ui/model/FilterOperator'
 ], function(BaseController,MessageBox,MessageToast,Fragment,Filter,FilterOperator){
     'use strict';
-    return BaseController.extend("com.ey.fin.ap.controller.View2",{
+    return BaseController.extend("com.ey.finn.ap.controller.View2",{
         onInit : function(){
             this.oRouter = this.getOwnerComponent().getRouter();
             // explicityly pass controller object to the event handler
@@ -62,7 +62,7 @@ sap.ui.define([
               if(!this.oSupplierPopup){
                 Fragment.load ({
                     id:'supplier',
-                    name:'com.ey.fin.ap.fragments.popup',
+                    name:'com.ey.finn.ap.fragments.popup',
                     controller: this
                   }).then(function(oDialogBox){
                         that.oSupplierPopup=oDialogBox;
@@ -125,7 +125,7 @@ sap.ui.define([
           if(!this.oCitiPopup){
             Fragment.load ({
                 id:'cities',
-                name:'com.ey.fin.ap.fragments.popup',
+                name:'com.ey.finn.ap.fragments.popup',
                 controller: this
               }).then(function(oDialogBox){
                     // in JS , the call back and promise fucnions will by default not

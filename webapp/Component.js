@@ -2,7 +2,7 @@ sap.ui.define([
    'sap/ui/core/UIComponent'
 ], function(UIComponent) {
     'use strict';
-    return UIComponent.extend("com.ey.fin.ap.Component",{
+    return UIComponent.extend("com.ey.finn.ap.Component",{
         metadata : {
             manifest: "json"
 

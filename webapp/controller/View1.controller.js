@@ -1,11 +1,11 @@
 sap.ui.define([
-    'com/ey/fin/ap/controller/BaseController',
-    'com/ey/fin/ap/util/formatter',
+    'com/ey/finn/ap/controller/BaseController',
+    'com/ey/finn/ap/util/formatter',
     "sap/ui/model/Filter",
 	"sap/ui/model/FilterOperator"
 ], function(BaseController,Formatter, Filter, FilterOperator){
     'use strict';
-    return BaseController.extend("com.ey.fin.ap.controller.View1",{
+    return BaseController.extend("com.ey.finn.ap.controller.View1",{
         formatter : Formatter,
         onInit: function() {
             

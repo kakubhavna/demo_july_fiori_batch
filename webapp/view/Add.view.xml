@@ -1,7 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
     xmlns:f="sap.ui.layout.form"  xmlns:l="sap.ui.layout"
     xmlns:core="sap.ui.core"
- controllerName="com.ey.fin.ap.controller.Add">
+ controllerName="com.ey.finn.ap.controller.Add">
     <Page title="Manage Product">
         <content>
             <f:SimpleForm id="SimpleFormChange354"

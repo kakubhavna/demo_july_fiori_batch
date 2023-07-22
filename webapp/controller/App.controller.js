@@ -1,8 +1,8 @@
 sap.ui.define([
-    'com/ey/fin/ap/controller/BaseController'
+    'com/ey/finn/ap/controller/BaseController'
 ], function(BaseController){
     'use strict';
-    return BaseController.extend("com.ey.fin.ap.controller.App",{
+    return BaseController.extend("com.ey.finn.ap.controller.App",{
         
 
 

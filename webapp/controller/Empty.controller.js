@@ -1,8 +1,8 @@
 sap.ui.define([
-    'com/ey/fin/ap/controller/BaseController'
+    'com/ey/finn/ap/controller/BaseController'
 ], function(BaseController){
     'use strict';
-    return BaseController.extend("com.ey.fin.ap.controller.Empty",{
+    return BaseController.extend("com.ey.finn.ap.controller.Empty",{
         
         onBack : function(){
             // step 1: Get mother object

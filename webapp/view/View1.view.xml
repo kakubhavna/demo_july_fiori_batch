@@ -1,4 +1,4 @@
-<mvc:View xmlns:control="sap.gantt.control" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ey.fin.ap.controller.View1">
+<mvc:View xmlns:control="sap.gantt.control" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ey.finn.ap.controller.View1">
     <Page title = "Prod2 " >
         <headerContent>
             

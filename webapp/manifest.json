@@ -1,6 +1,6 @@
 {
     "sap.app":{
-        "id" : "com.ey.fin.ap",
+        "id" : "com.ey.finn.ap",
         "type" : "application",
         "ach" : "FIN-ACC-AP",
         "title" :"{{appTitle}}",
@@ -42,13 +42,13 @@
 
         "rootView" :{
 
-            "viewName": "com.ey.fin.ap.view.App",
+            "viewName": "com.ey.finn.ap.view.App",
             "type": "XML",
             "id":"idRoot"
         },
         "routing": {
             "config":{
-                "viewPath": "com.ey.fin.ap.view",
+                "viewPath": "com.ey.finn.ap.view",
                 "viewType": "XML",
                 "controlId": "appCon",
                 "clearControlAggregation": true
